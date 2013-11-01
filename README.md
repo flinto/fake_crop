@@ -1,6 +1,6 @@
 # FakeCrop, by Flinto
 
-A jQuery plugin for &ldquo;cropping&rdquo; an image within an element.
+A jQuery plugin for &ldquo;cropping&rdquo; an image within an HTML element. FakeCrop will scale the image to fit within the element, and center it.
 
 ## Installation
 
