@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flinto Flile</title>
+
+    <style type="text/css">
+      body { color: #333333; -webkit-font-smoothing: antialiased; font-family: helvetica, arial, sans-serif; line-height: 1.3em; }
+      .container {width: 300px; margin: 100px auto; }
+      .container h1{font-size: 14px; text-align: center;}
+      .box{border: 1px solid #ccc; margin: 0 auto 50px auto;}
+      .crop_me{width: 200px; height: 200px; }
+      .crop_me.portrait{height: 300px;}
+      .crop_me.landscape{width: 300px;}
+      .original{width: 300px;}
+      .original img{width: 100%; display: block;}
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="../jquery.fake_crop.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.crop_me').fakeCrop()
+      })
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Original Image</h1>
+      <div class="box original">
+        <img src="houdini.jpg">
+      </div>
+
+      <h1>Cropped Square</h1>
+      <div class="box crop_me square">
+        <img src="houdini.jpg">
+      </div>
+
+      <h1>Cropped Portrait</h1>
+      <div class="box crop_me portrait">
+        <img src="houdini.jpg">
+      </div>
+
+      <h1>Cropped Landscape</h1>
+      <div class="box crop_me landscape">
+        <img src="houdini.jpg">
+      </div>
+
+    </div>
+
+  </body>
+</html>
